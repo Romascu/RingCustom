@@ -1,0 +1,700 @@
+﻿<!-- **********************************************************************
+* Copyright (C) 2016 by Savoir-faire Linux                                *
+* Author: Jäger Nicolas<nicolas.jager@savoirfairelinux.com>               *
+* Author: Traczyk Andreas<andreas.traczyk@savoirfairelinux.com>           *
+*                                                                         *
+* This program is free software; you can redistribute it and/or modify    *
+* it under the terms of the GNU General Public License as published by    *
+* the Free Software Foundation; either version 3 of the License, or       *
+* (at your option) any later version.                                     *
+*                                                                         *
+* This program is distributed in the hope that it will be useful,         *
+* but WITHOUT ANY WARRANTY; without even the implied warranty of          *
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
+* GNU General Public License for more details.                            *
+*                                                                         *
+* You should have received a copy of the GNU General Public License       *
+* along with this program.  If not, see <http://www.gnu.org/licenses/> .  *
+*********************************************************************** -->
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- general -->
+    <Style x:Key="Grid#3bc1d3" TargetType="Grid">
+        <Setter Property="Background"
+                Value="#3bc1d3"/>
+    </Style>
+    <Style x:Key="Stack#3bc1d3" TargetType="StackPanel">
+        <Setter Property="Background"
+                Value="#3bc1d3"/>
+    </Style>
+    <Style x:Key="TextStyle1"
+           TargetType="TextBlock">
+        <Setter Property="FontSize"
+                Value="20"/>
+        <Setter Property="Foreground"
+                Value="Black"/>
+    </Style>
+    <Style x:Key="TextStyle2"
+           TargetType="TextBlock">
+        <Setter Property="FontSize"
+                Value="20"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+    </Style>
+    <Style x:Key="TextStyle3"
+           TargetType="TextBlock">
+        <Setter Property="FontSize"
+                Value="15"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+    </Style>
+    <Style x:Key="TextStyle_MiniNotification"
+           TargetType="TextBlock">
+        <Setter Property="FontSize"
+                Value="8"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+    </Style>
+    <Style x:Key="TextStyle4"
+           TargetType="TextBlock">
+        <Setter Property="FontSize"
+                Value="12"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="Black"/>
+    </Style>
+    <Style x:Key="TextStyle5"
+           TargetType="TextBlock">
+        <Setter Property="FontSize"
+                Value="15"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Left"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="FontStyle"
+                Value="Italic"/>
+        <Setter Property="Foreground"
+                Value="Black"/>
+    </Style>
+    <Style x:Key="TextStyle6"
+           TargetType="TextBlock">
+        <Setter Property="FontSize"
+                Value="12"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Left"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="Black"/>
+    </Style>
+    <Style x:Key="TextStyle7"
+           TargetType="TextBlock">
+        <Setter Property="Foreground"
+                Value="White"/>
+    </Style>
+    <Style x:Key="TextSegoeStyle1"
+           TargetType="TextBlock">
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="FontSize"
+                Value="15"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+    </Style>
+    <Style x:Key="TextSegoeStyle-20pt-black"
+           TargetType="TextBlock">
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="FontSize"
+                Value="20"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Left"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="Black"/>
+    </Style>
+    <Style x:Key="TextSegoeStyle-24pt-black"
+           TargetType="TextBlock">
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="FontSize"
+                Value="24"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Left"/>
+        <Setter Property="VerticalAlignment"
+                Value="Bottom"/>
+        <Setter Property="Foreground"
+                Value="Black"/>
+        <Setter Property="Margin"
+                Value="0,0,10,0"/>
+    </Style>
+    <Style x:Key="TextSegoeStyle-Centered-40pt-white"
+           TargetType="TextBlock">
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="FontSize"
+                Value="40"/>
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+    </Style>
+    <Style x:Key="TextSegoeStyle-20pt-green"
+           TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="Green"/>
+        <Setter Property="FontSize"
+                Value="20"/>
+    </Style>
+    <Style x:Key="TextSegoeStyle-20pt-red"
+           TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+        <Setter Property="Foreground"
+                Value="Red"/>
+        <Setter Property="FontSize"
+                Value="20"/>
+    </Style>
+    <Style x:Key="ButtonStyle1"
+           TargetType="Button">
+        <Setter Property="Width"
+                Value="50"/>
+        <Setter Property="Height"
+                Value="50"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="HamburgerButtonStyle"
+           TargetType="Button">
+        <Setter Property="Width"
+                Value="50"/>
+        <Setter Property="Height"
+                Value="30"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="Background"
+                Value="Transparent"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ButtonStyle2"
+        TargetType="Button">
+        <Setter Property="Width"
+            Value="400"/>
+        <Setter Property="Height"
+            Value="30"/>
+        <Setter Property="FontFamily"
+            Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+            Value="White"/>
+        <Setter Property="Background"
+            Value="#3bc1d3"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ButtonStyle3"
+           TargetType="Button">
+        <Setter Property="Foreground"
+                Value="Black"/>
+        <Setter Property="Background"
+                Value="Transparent"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="Width"
+                Value="80"/>
+        <Setter Property="Width"
+                Value="120"/>
+        <Setter Property="FontSize"
+                Value="70"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ButtonStyle4"
+           TargetType="Button">
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="Background"
+                Value="#3bc1d3"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ButtonStyle5"
+        TargetType="Button">
+        <Setter Property="Width"
+            Value="160"/>
+        <Setter Property="Height"
+            Value="30"/>
+        <Setter Property="FontFamily"
+            Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+            Value="White"/>
+        <Setter Property="Background"
+            Value="#3bc1d3"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ButtonStyle6"
+        TargetType="Button">
+        <Setter Property="Width"
+            Value="320"/>
+        <Setter Property="Height"
+            Value="30"/>
+        <Setter Property="FontFamily"
+            Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+            Value="White"/>
+        <Setter Property="Background"
+            Value="Transparent"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ButtonStyle7"
+        TargetType="Button">
+        <Setter Property="Width"
+            Value="20"/>
+        <Setter Property="Height"
+            Value="20"/>
+        <Setter Property="FontFamily"
+            Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+            Value="White"/>
+        <Setter Property="Background"
+            Value="Transparent"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ButtonStyle8"
+           TargetType="Button">
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="Background"
+                Value="#3bc1d3"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+        <Setter Property="FontSize"
+                Value="30"/>
+    </Style>
+    <Style x:Key="ToggleButtonStyle1"
+           TargetType="ToggleButton">
+        <Setter Property="Width"
+                Value="46"/>
+        <Setter Property="Height"
+                Value="30"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="Background"
+                Value="Transparent"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="smartGridButtonStyle"
+           TargetType="Button">
+        <Setter Property="Width"
+                Value="46"/>
+        <Setter Property="Height"
+                Value="30"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="Background"
+                Value="Transparent"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="TextBoxStyle2"
+           TargetType="TextBox">
+        <Setter Property="IsReadOnly" Value="True"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+
+    <!-- console -->
+    <Style x:Key="ConsoleScrollViewerStyle"
+           TargetType="ScrollViewer">
+        <Setter Property="Background"
+                Value="Black"/>
+    </Style>
+    <Style x:Key="ConsoleTextStyle1"
+           TargetType="RichTextBlock">
+        <Setter Property="FontSize"
+                Value="12"/>
+        <Setter Property="Foreground"
+                Value="GreenYellow"/>
+    </Style>
+    <Style x:Key="ButtonSendCmdStyle"
+           TargetType="Button">
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="Width"
+                Value="50"/>
+        <Setter Property="Height"
+                Value="30"/>
+        <Setter Property="Foreground"
+                Value="Black"/>
+        <Setter Property="FontSize"
+                Value="17"/>
+        <Setter Property="Content"
+                Value="&#xE751;"/>
+        <Setter Property="Background"
+                Value="Transparent"/>
+    </Style>
+    <Style x:Key="ConsoleTextBoxStyle"
+           TargetType="TextBox">
+        <Setter Property="Height"
+                Value="30"/>
+    </Style>
+
+    <!-- smartlist -->
+    <!--<Style x:Key="smartListStyle" TargetType="ListBox">
+        <Setter Property="Background" Value="#FFE4F1F9"/>
+        <Setter Property="" Value="#FFE4F1F9"/>
+    </Style>-->
+    <Style x:Key="contactsListBoxStyle" TargetType="ListBoxItem">
+        <Setter Property="MinWidth" Value="{StaticResource SplitViewCompactPaneThemeLength}"/>
+        <Setter Property="Height" Value="auto"/>
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+
+    <Style x:Key ="greenRoundedButtonStyle1" TargetType ="Button">
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="FontSize" Value="30"/>
+
+        <Setter Property ="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType ="Button">
+                    <Grid>
+                        <Ellipse Name ="OuterRing" Width ="50" Height ="50" Fill ="LightGreen"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key ="redRoundedButtonStyle1" TargetType ="Button">
+        <Setter Property ="Foreground" Value ="Black"/>
+        <Setter Property ="FontWeight" Value ="Bold"/>
+        <Setter Property ="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType ="Button">
+                    <Grid>
+                        <Ellipse Name ="OuterRing" Width ="50" Height ="50" Fill ="LightCoral"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BorderStyle1"
+           TargetType="Border">
+        <Setter Property="Background" Value="#3bc1d3"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="23"/>
+        <Setter Property="Padding" Value="4"/>
+    </Style>
+    <Style x:Key="BorderStyle2"
+           TargetType="Border">
+        <Setter Property="Background" Value="OrangeRed"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="23"/>
+        <Setter Property="Padding" Value="4"/>
+    </Style>
+    <Style x:Key="BorderStyle3"
+           TargetType="Border">
+        <Setter Property="Background" Value="#3bc1d3"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="Width" Value="28"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="BorderBrush" Value="white"/>
+        <Setter Property="Padding" Value="4"/>
+    </Style>
+    <Style x:Key="BorderStyle_MiniNotification"
+           TargetType="Border">
+        <Setter Property="Background" Value="OrangeRed"/>
+        <Setter Property="CornerRadius" Value="3"/>
+        <Setter Property="Width" Value="12"/>
+        <Setter Property="Height" Value="12"/>
+        <Setter Property="Padding" Value="2"/>
+    </Style>
+    <Style x:Key="messageBubleStyle"
+       TargetType="ListBoxItem">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="Margin" Value="0,0,2,0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListBoxItem">
+                    <Border Background="Transparent">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="SelectionStates">
+                                <VisualState x:Name="Selected" />
+                                <VisualState x:Name="Unselected">
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- rounded button for call -->
+    <Style x:Key ="roundButtonTemplate" TargetType ="Button">
+        <Setter Property ="Foreground" Value ="Black"/>
+        <Setter Property ="FontWeight" Value ="Bold"/>
+        <Setter Property ="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType ="Button">
+                    <Grid>
+                        <Ellipse Name ="OuterRing" Width ="30" Height ="30" Fill ="#004c60"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonStyleForCallBar"
+           TargetType="Button">
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="Background"
+                Value="#004c60"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+    </Style>
+    <Style x:Key="ToggleButtonStyle2" TargetType="ToggleButton">
+        <Setter Property="Width"
+                Value="40"/>
+        <Setter Property="Height"
+                Value="30"/>
+        <Setter Property="FontFamily"
+                Value="Segoe MDL2 Assets"/>
+        <Setter Property="FontSize"
+                Value="15"/>
+        <Setter Property="Foreground"
+                Value="White"/>
+        <Setter Property="Background"
+                Value="Transparent"/>
+        <Setter Property="BorderThickness"
+                Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <Storyboard>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#abdaf9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#abdaf9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#abdaf9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Checked">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#e4f1f9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Black"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPointerOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#e4f1f9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Black"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="CheckedPressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#e4f1f9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Black"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="CheckedDisabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#e4f1f9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Black"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Indeterminate">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#abdaf9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="IndeterminatePointerOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#abdaf9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="IndeterminatePressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#abdaf9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="IndeterminateDisabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#abdaf9"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
